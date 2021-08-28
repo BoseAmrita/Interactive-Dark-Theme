@@ -6,5 +6,6 @@ An attempt to switch between dark mode and light mode with gestures that guide a
 Light Mode
 
 
+
 <img width="500" alt="2" src="https://user-images.githubusercontent.com/53186763/131227607-b65a28b3-f15b-41f4-a241-56ced5e06395.PNG">
 Dark Mode
