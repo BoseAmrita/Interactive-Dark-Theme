@@ -32,7 +32,7 @@
     font-size: 30px;
     animation: shake 3s 1;
     transition: 1s ease-in;
-    animation-iteration-count: infinite;
+    /*animation-iteration-count: infinite;*/
   }
   .dark main {
     background-color: #2A0944;
@@ -48,7 +48,7 @@
   .dark i.hand {
     color: white;
     animation: shake 2s 4;
-    animation-iteration-count: infinite;
+    /*animation-iteration-count: infinite;*/
   }
   @keyframes light-burst {
     from {
