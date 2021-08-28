@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  main {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: #eeeeee;
+    animation: light-burst 1s 1;
+    transition: 0.5s ease-out;
+  }
+  button {
+    background-color: #4f77e3;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-content: center;
+    padding: 50px 50px;
+    color: white;
+    font-size: 30px;
+  }
+  i.hand {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: rotate(55deg);
+    color: #4f77e3;
+    font-size: 30px;
+    animation: shake 3s 1;
+    transition: 1s ease-in;
+    animation-iteration-count: infinite;
+  }
+  .dark main {
+    background-color: #2A0944;
+    animation: dark-burst 1s 1;
+    transition: 0.1s ease-in;
+  }
+  .dark button {
+    background-color: #eeeeee;
+  }
+  .dark i {
+    color: #4f77e3;
+  }
+  .dark i.hand {
+    color: white;
+    animation: shake 2s 4;
+    animation-iteration-count: infinite;
+  }
+  @keyframes light-burst {
+    from {
+      clip-path: circle(6.5% at 50% 50%);
+    }
+    to {
+      clip-path: circle(70.7% at 50% 50%);
+    }
+  }
+  @keyframes dark-burst {
+    from {
+      background-color: #4f77e37d;
+      clip-path: circle(6.5% at 50% 50%);
+    }
+    to {
+      clip-path: circle(70.7% at 50% 50%);
+    }
+  }
+  @keyframes shake {
+    10% {
+      top: 70%;
+      left: 50%;
+      transform: rotate(0deg);
+    }
+    50% {
+      top: 60%;
+      left: 30%;
+      transform: rotate(45deg);
+    }
+    100% {
+      top: 50%;
+      left: 35%;
+      transform: rotate(90deg);
+    }
+  }
+  
